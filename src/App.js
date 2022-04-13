@@ -1,15 +1,15 @@
-
-import { Container } from 'react-bootstrap'
-
-import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-    <Navbar />
+    <div>
     <Header />
+     <main className="py-5">
+       <header>
+      <h1>Welcome</h1>
+      </header>    
+      </main>
     <Footer />
     </div>
   );
