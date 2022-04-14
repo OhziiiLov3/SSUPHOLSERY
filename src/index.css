@@ -5,4 +5,19 @@ font-family: 'Oswald', sans-serif !important;
 main{
   min-height: 80vh;
 }
+
+.logo{
+  width: 2rem;
+  height: 2rem  !important;
+}
+
+@media(max-width:767px) {
+  .logo{
+  width: 2rem;
+  height: 2rem  !important;
+  display:none
+}
+
+}
+
 /* *** FOOTER *** */

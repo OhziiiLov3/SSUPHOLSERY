@@ -1,12 +1,13 @@
 import React from 'react'
+import logo from "../images/PrimaryIcon.png";
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 
 function Header() {
     return (
         <header>    
-     <Navbar bg="light" expand="lg">
+     <Navbar bg="dark" variant="dark" expand="lg" collaspeOnSelect>
   <Container>
-    <Navbar.Brand href="#home">Swift Stitch Upholstery</Navbar.Brand>
+    <Navbar.Brand href="/">Swift Stitch Upholstery</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
@@ -19,6 +20,9 @@ function Header() {
           <NavDropdown.Divider />
           <NavDropdown.Item href="#action/3.4">Leather</NavDropdown.Item>
         </NavDropdown>
+        <a className="navbar-brand" href="/"><img className="logo" src={logo} alt="logo..." /></a>
+        <Nav.Link href="#link"><i className="fas fa-shopping-cart"></i>Cart</Nav.Link>
+        <Nav.Link href="#link">Login</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Container>
