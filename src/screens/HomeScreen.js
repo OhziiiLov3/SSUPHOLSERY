@@ -8,7 +8,8 @@ import products from '../products'
 function HomeScreen() {
     return (
         <div>
-            <h1> Top Products</h1>
+            <h1>Welcome to SSUpholstery</h1>
+            <h3> Top Products</h3>
             <Row>
                 {products.map(product => (
                     <Col key={product._id} sm={12} md={6} lg={4} xl={3}>

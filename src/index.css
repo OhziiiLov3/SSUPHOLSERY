@@ -27,4 +27,12 @@ img.card-img{
   height: 14rem  !important;
 }
 
+h1{
+  padding: 1rem 0;
+}
+
+.rating span{
+margin: 0.1rem;
+}
+
 /* *** FOOTER *** */
