@@ -11,7 +11,7 @@ main{
   height: 2rem  !important;
 }
 
-@media(max-width:767px) {
+@media(max-width:1000px) {
   .logo{
   width: 2rem;
   height: 2rem  !important;

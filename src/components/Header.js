@@ -15,14 +15,14 @@ function Header() {
         <Nav.Link href="#link">About Us</Nav.Link>
         <NavDropdown title="Products" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Textiles</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Fabric</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">Needles</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3">Thread</NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item href="#action/3.4">Leather</NavDropdown.Item>
         </NavDropdown>
         <a className="navbar-brand" href="/"><img className="logo" src={logo} alt="logo..." /></a>
         <Nav.Link href="#link"><i className="fas fa-shopping-cart"></i>Cart</Nav.Link>
-        <Nav.Link href="#link">Login</Nav.Link>
+        <Nav.Link href="#link"><i className="fas fa-user"></i>Login</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Container>
