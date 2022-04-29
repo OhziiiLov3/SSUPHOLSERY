@@ -11,6 +11,35 @@ main{
   backdrop-filter: blur(5px);
 }
 
+/* .navbar-nav{
+  margin: auto;
+} */
+
+nav a.nav-link {
+  letter-spacing: .0375rem;
+  cursor: pointer; 
+}
+
+
+.navbar-nav > li > a {
+  margin-right: .75rem;
+  margin-left: .75rem;
+  color: var(--primary-black)  !important;
+  border-top: .1875rem solid var(--primary-white);
+}
+
+.navbar-nav > a:hover {
+  color: rgb(193,156,106) !important;
+}
+
+.navbar-nav > li> a.active, .navbar-nav > a:focus{
+  border-top: .1875rem solid  rgb(193,156,106) !important ;
+
+}
+
+.navbar-nav > li > a:hover{
+   border-top: .1875rem solid var(--primary-black);
+}
 
 
 
