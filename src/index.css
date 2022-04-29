@@ -5,6 +5,14 @@ font-family: 'Oswald', sans-serif !important;
 main{
   min-height: 80vh;
 }
+/* *** NAVBAR *** */
+.navbar{
+  border-bottom: .1875rem solid rgb(193,156,106) !important;
+  backdrop-filter: blur(5px);
+}
+
+
+
 
 .logo{
   width: 2rem;
