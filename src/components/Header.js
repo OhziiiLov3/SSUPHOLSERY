@@ -18,9 +18,10 @@ function Header() {
         <LinkContainer to='/'>
         <Nav.Link>Home</Nav.Link>
         </LinkContainer>
-        <Nav.Link href="#link">About Us</Nav.Link>
-
-        <NavDropdown title="Products" id="basic-nav-dropdown">
+        <LinkContainer to='/about'>
+        <Nav.Link >About Us</Nav.Link>
+        </LinkContainer>
+        <NavDropdown className="dropdown" title="Products" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Textiles</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">Needles</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3">Thread</NavDropdown.Item>

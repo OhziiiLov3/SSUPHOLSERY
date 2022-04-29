@@ -32,13 +32,19 @@ nav a.nav-link {
   color: rgb(193,156,106) !important;
 }
 
-.navbar-nav > li> a.active, .navbar-nav > a:focus{
-  border-top: .1875rem solid  rgb(193,156,106) !important ;
-
+.navbar-nav > .dropdown >a:hover {
+  color: rgb(193,156,106) !important;
 }
 
+.navbar-nav  li> a.active, .navbar-nav > a:focus{
+  border-top: .1800rem solid  rgb(193,156,106) !important ;
+}
+
+.dropdown > a:focus{
+   border-top: .1800rem solid  rgb(193,156,106) !important ;
+}
 .navbar-nav > li > a:hover{
-   border-top: .1875rem solid var(--primary-black);
+   border-top: .1875rem solid  rgb(193,156,106) !important;
 }
 
 
