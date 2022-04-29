@@ -5,7 +5,7 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 function Header() {
     return (
         <header>    
-     <Navbar bg="dark" variant="dark" expand="lg" collaspeOnSelect>
+     <Navbar bg="dark" variant="dark" expand="lg" collaspeonselect="true">
   <Container>
     <Navbar.Brand href="/">Swift Stitch Upholstery</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
