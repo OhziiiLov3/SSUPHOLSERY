@@ -20,4 +20,11 @@ main{
 
 }
 
+/* *** HOMESCREEN *** */
+
+img.card-img{
+  width: 14rem;
+  height: 14rem  !important;
+}
+
 /* *** FOOTER *** */

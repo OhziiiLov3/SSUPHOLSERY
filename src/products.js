@@ -13,7 +13,7 @@ const products = [
   },
   {
     '_id': '2',
-    'name': 'GROZ-BECKERT 135X17 CHROMIUM NEEDLES',
+    'name': 'GROZ-BECKERT NEEDLES',
     'image': '/images/needles.png',
     'description':
       'Most common for all kinds of lockstitch applications. For use on woven fabrics, leather and artificial leather and coated fabrics',
@@ -38,11 +38,11 @@ const products = [
   },
   {
     '_id': '4',
-    'name': 'Sony Playstation 4 Pro White Version',
+    'name': 'SERABOND BONDED',
     'image': '/images/thread.png',
     'description':
-      'The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music',
-    'brand': 'Sony',
+      'Serabond is a bonded polyester thread with outstanding UV resistance suitable for outdoor applications such as marine, motorcycle seats and convertible cars',
+    'brand': 'SERABOND',
     'category': 'Electronics',
     'price': 399.99,
     'countInStock': 11,
@@ -51,11 +51,11 @@ const products = [
   },
   {
     '_id': '5',
-    'name': 'Logitech G-Series Gaming Mouse',
-    'image': '/images/mouse.jpg',
+    'name': 'MK7 CLARK PLAID FABRIC',
+    'image': '/images/Plaid.png',
     'description':
-      'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
-    'brand': 'Logitech',
+      'The iconic tartan look! Clark plaid seat fabric is OEM VW® Golf MK7 GTI cloth. When shopping for Clark plaid, note that ours is Made in Germany, is foam backed, and is 59" wide.',
+    'brand': 'CLARK',
     'category': 'Electronics',
     'price': 49.99,
     'countInStock': 7,
@@ -64,11 +64,11 @@ const products = [
   },
   {
     '_id': '6',
-    'name': 'Amazon Echo Dot 3rd Generation',
-    'image': '/images/alexa.jpg',
+    'name': 'WESTFALIA PLAID FABRIC',
+    'image': '/images/GreenPlaid.png',
     'description':
-      'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
-    'brand': 'Amazon',
+      'Westfalia plaid fabric was original in mid to late 70',
+    'brand': 'WESTFALIA',
     'category': 'Electronics',
     'price': 29.99,
     'countInStock': 0,
