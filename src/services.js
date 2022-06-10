@@ -1,4 +1,4 @@
-const products = [
+const services = [
   {
     '_id': '1',
     'name': 'NAPPA ITALIA LEATHER',
@@ -78,4 +78,4 @@ const products = [
 ]
 
 
-export default products
+export default services

@@ -21,12 +21,12 @@ function Header() {
         <LinkContainer to='/about'>
         <Nav.Link >About Us</Nav.Link>
         </LinkContainer>
-        <NavDropdown className="dropdown" title="Products" id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Textiles</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Needles</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Thread</NavDropdown.Item>
+        <NavDropdown className="dropdown" title="Services" id="basic-nav-dropdown">
+          <NavDropdown.Item href="#action/3.1">Steering Wheels</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">Seat Belts</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Custom Work</NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">Leather</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.4">Automotive</NavDropdown.Item>
         </NavDropdown>
         <a className="navbar-brand" href="/"><img className="logo" src={logo} alt="logo..." /></a>
 
