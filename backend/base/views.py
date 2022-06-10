@@ -23,5 +23,18 @@ def getRoutes(request):
         '/api/services/update/<id>/',
     ]
     return Response(routes)
+
+@api_view(['GET']) 
 def getServices(request):
-    return JsonResponse(services, safe=False)
+    return Response(services)
+
+
+@api_view(['GET']) 
+def getService(request,pk):
+    service = None
+    for i in services:
+            if i['_id'] == pk:
+                service = i 
+                break 
+
+    return Response(service)
