@@ -1,12 +1,24 @@
-import React from 'react'
-import {Link, useParams  } from 'react-router-dom'
+import React, {useState, useEffect} from 'react'
+import {Link, useParams } from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Button, Card } from 'react-bootstrap'
 import Rating from '../components/Rating'
-import services from '../services'
+import axios from 'axios'
 
-function ProductScreen() {
-    const params = useParams();
-    const service = services.find((p) => p._id == params.id)
+function ProductScreen({match} ) {
+    const ServiceId = useParams();
+    const [service, setService] = useState([])
+
+    useEffect(() => {
+
+    async function fetchService(){
+
+        const {data} = await axios.get(`/api/services/${ServiceId.id}`)
+        setService(data)
+        }  
+        fetchService() 
+
+    }, [])
+
     return (
         <div>
             <Link to='/' className='btn btn-dark my-3'>Go Back</Link> 
@@ -19,6 +31,7 @@ function ProductScreen() {
                     <ListGroup variant="flush">
                     <ListGroup.Item>
                         <h3>{service.name}</h3>
+                        <h2>{service.brand}</h2>
                     </ListGroup.Item>
 
                     <ListGroup.Item>

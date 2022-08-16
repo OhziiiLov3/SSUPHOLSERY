@@ -7,11 +7,23 @@ import axios from 'axios'
 
 
 function HomeScreen() {
-    const [services, setProducts] =useState([])
+    const [services, setServices] = useState([])
+
+    useEffect(() => {
+
+    async function fetchServices(){
+
+        const {data}= await axios.get('/api/services/')
+        setServices(data)
+        }  
+        fetchServices() 
+
+    }, [])
+
     return (
         <div>
             <h1>Welcome to SSUpholstery</h1>
-            <h3> Top Products</h3>
+            <h3> Feature Services</h3>
             <Row>
                 {services.map(service => (
                     <Col key={service._id} sm={12} md={6} lg={4} xl={3}>
