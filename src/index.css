@@ -1,9 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Raleway:wght@100;500&display=swap');
 body{
 font-family: 'Oswald', sans-serif !important;
 }
 /* *** HEADER *** */
 main{
   min-height: 80vh;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive !important;
+  font-family: 'Kdam Thmor Pro', sans-serif !important;;
+  /* font-family: 'Raleway', sans-serif !important; */
+  font-size: 70px !important;
+  letter-spacing: .0200rem;
+  color: rgb(193, 156, 106) !important;
+  padding: 3rem 0;
+  -webkit-text-stroke-width: 1px !important;
+  -webkit-text-stroke-color:black;
 }
 /* *** NAVBAR *** */
 .navbar{
@@ -79,4 +92,151 @@ h1{
 margin: 0.1rem;
 }
 
+/* ***ABOUT PAGE*** */
+
+
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.aboutimage {
+  position: relative;
+  border-radius: 50%;
+  padding: .1rem;
+  border: 3px solid rgb(193, 156, 106, .7);
+}
+
+.about-heading {
+  color: rgb(193, 156, 106);
+  text-transform: uppercase;
+  -webkit-text-stroke-width: .7px;
+  -webkit-text-stroke-color: black;
+
+}
+
+.about-heading:hover {
+  color: rgb(147, 203, 73);
+
+}
+
+@media(max-width:414px) {
+  .aboutimage img {
+    width: 15rem !important;
+  }
+}
+
+@media(max-width:414px) {
+  .about-heading h1 {
+    font-size: 4rem !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    letter-spacing: .0300rem;
+    color: rgb(147, 203, 73);
+    padding: 2rem 0;
+  }
+}
+
 /* *** FOOTER *** */
+
+
+/* LANDING CAROUSEL */
+
+.landingCarousel {
+  background-image: url(IMG_20191005_091944_452.jpg);
+  background-size: cover;
+  background-color: rgb(193,
+    156,
+    106);
+  text-align: center;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+@media(max-width:768px) {
+  .landingCarousel {
+    background-image: url(IMG_20191005_091944_452.jpg);
+    background-size: cover;
+    background-color:rgb(193,
+        156,
+        106);;
+    text-align: center;
+    padding-bottom: 4rem;
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+
+
+
+@media(max-width:768px) {
+  .landingCarousel h1 {
+    color:rgb(193,
+        156,
+        106);
+    font-size: 1rem !important;
+    padding: 6rem 0;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+}
+
+@media(max-width:414px) {
+  .landingCarousel h1 {
+    font-size: 4rem !important;
+    letter-spacing: .0300rem;
+    color: rgb(147, 203, 73);
+    padding: 2rem 0;
+  }
+}
+
+.landing-content {
+  text-align: center !important;
+  max-width: 57.125rem;
+  margin: 0 auto 2rem auto;
+  background:rgb(193,
+      156,
+      106, .7);
+}
+
+.myLandingCarousel {
+  color: white;
+  background: transparent;
+  margin-top: -6%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.myLandingCarousel img {
+  border-radius: 50%;
+}
+
+@media(max-width:414px) {
+  .myLandingCarousel h3 {
+    color: rgb(147, 203, 73);
+    font-weight: 400 !important;
+    font-size: 3rem !important;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 2px !important;
+    -webkit-text-stroke-color: black;
+  }
+}
+
+.myLandingCarousel p {
+  color: black;
+  font-size: 1.2rem !important;
+  -webkit-text-stroke-width: .5px !important;
+  -webkit-text-stroke-color: rgb(193,
+      156,
+      106)!important;
+
+}

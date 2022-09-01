@@ -10,7 +10,7 @@ function BootStrapCarousel() {
             <img
               className="w-50 py-5"
               style={{ height: 450 }}
-              src="/images/foam.png"
+              src="/images/IMG_20190121_111230_284.jpg"
               alt="First slide"
             />
             <Carousel.Caption>
@@ -22,7 +22,7 @@ function BootStrapCarousel() {
             <img
               className="w-50 py-5"
               style={{ height: 450 }}
-              src="/images/Plaid.png"
+              src="/images/oldsckoolleather.jpg"
               alt="Second slide"
             />
             <Carousel.Caption>
@@ -34,11 +34,25 @@ function BootStrapCarousel() {
             <img
               className="w-50 py-5"
               style={{ height: 450 }}
-              src="/images/blackleather.png"
+              src="/images/BMW.jpg"
               alt="Third slide"
             />
             <Carousel.Caption>
               <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item className="myLandingCarousel">
+            <img
+              className="w-50 py-5"
+              style={{ height: 450 }}
+              src="/images/BMWLEATHER.jpg"
+              alt="Fourth slide"
+            />
+            <Carousel.Caption>
+              <h3>Fourth slide label</h3>
               <p>
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
               </p>

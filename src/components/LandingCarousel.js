@@ -5,7 +5,7 @@ import BootStrapCarousel from "./BootStrapCarousel";
 function LandingCarousel() {
   return (
     <Container className="landingCarousel mx-auto py-2 ">
-      <h1 className="text-center py-3">JoinMyObession</h1>
+      <h1 className="text-center py-3">Swift Stitch Upholstery</h1>
       <div className="container">
         <div className="landing-content">
           <BootStrapCarousel />
