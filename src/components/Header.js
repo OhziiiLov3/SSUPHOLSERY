@@ -17,7 +17,7 @@ function Header() {
             </LinkContainer>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mx-auto">
+              <Nav className="ms-auto">
                 <LinkContainer to="/home">
                   <Link
                     smooth={true}
@@ -29,12 +29,6 @@ function Header() {
                     Home
                   </Link>
                 </LinkContainer>
-                <LinkContainer to="/about">
-                  <Nav.Link>About Us</Nav.Link>
-                </LinkContainer>
-                <LinkContainer to="/contact">
-                  <Nav.Link>Contact Us</Nav.Link>
-                </LinkContainer>
                 <NavDropdown
                   href="/services"
                   className="dropdown"
@@ -45,9 +39,6 @@ function Header() {
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="/volkswagen">
                     Volkswagen
-                    <ul>
-                      <li>Mk1</li>
-                    </ul>
                   </NavDropdown.Item>
                   <NavDropdown.Item href="#supplies">
                     Upholstery Supplies + Tools
@@ -60,30 +51,10 @@ function Header() {
                     Merchandise
                   </NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown
-                  href="/services"
-                  className="dropdown"
-                  title="Services"
-                  id="basic-nav-dropdown"
-                >
-                  <NavDropdown.Item href="/services">
-                    My Serivces
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="/automotive">
-                    Automotive
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#seatbelts">
-                    Seat Belts
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#steeringwheels">
-                    Steering Wheels
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="/customwork">
-                    Custom Work
-                  </NavDropdown.Item>
-                </NavDropdown>
+
+                <LinkContainer to="/about">
+                  <Nav.Link>About Us</Nav.Link>
+                </LinkContainer>
                 <LinkContainer to="/blog">
                   <Link
                     smooth={true}
@@ -95,16 +66,8 @@ function Header() {
                     Blog
                   </Link>
                 </LinkContainer>
-                <LinkContainer to="/cart">
-                  <Nav.Link>
-                    <i className="fas fa-shopping-cart"></i>Cart
-                  </Nav.Link>
-                </LinkContainer>
-
-                <LinkContainer to="/login">
-                  <Nav.Link>
-                    <i className="fas fa-user"></i>Login
-                  </Nav.Link>
+                <LinkContainer to="/contact">
+                  <Nav.Link>Contact Us</Nav.Link>
                 </LinkContainer>
               </Nav>
             </Navbar.Collapse>

@@ -1,6 +1,5 @@
 import React from 'react'
 import {Card} from 'react-bootstrap'
-import Rating from './Rating'
 import { Link } from 'react-router-dom'
 
 function Services({ service }) {
@@ -21,7 +20,7 @@ function Services({ service }) {
         <Card.Text as="div">
         <div className="my-3">
             {/* {product.rating} from {product.numReviews} Reviews */}
-            <Rating value={service.rating} text={`${service.numReviews} Reviews` } color={'#f8e825'} />
+            {/* <Rating value={service.rating} text={`${service.numReviews} Reviews` } color={'#f8e825'} /> */}
         </div>
         </Card.Text>
 

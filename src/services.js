@@ -1,7 +1,7 @@
 const services = [
   {
     '_id': '1',
-    'name': 'NAPPA ITALIA LEATHER',
+    'name': 'VolksWagen',
     'image': '/images/blackleather.png',
     'description':
       'Nappa Italia is an OEM style, European leather embossed with the quintessential nappa haircell print. ',
@@ -12,8 +12,8 @@ const services = [
     'numReviews': 12,
   },
   {
-    '_id': '2',
-    'name': 'GROZ-BECKERT NEEDLES',
+    '_id': '',
+    'name': 'Upholstery Supplies + Tools',
     'image': '/images/needles.png',
     'description':
       'Most common for all kinds of lockstitch applications. For use on woven fabrics, leather and artificial leather and coated fabrics',
@@ -25,7 +25,7 @@ const services = [
   },
   {
     '_id': '3',
-    'name': 'ALCANTARA FOAM BACKED',
+    'name': 'Seat Covers',
     'image': '/images/foam.png',
     'description':
       'Alcantara Pannel with foam...save time in not needing to apply your own foam! Great for multiple uses especially headliners. Relicate only supplies genuine Alcantara that is Made in Italy',
@@ -38,7 +38,7 @@ const services = [
   },
   {
     '_id': '4',
-    'name': 'SERABOND BONDED',
+    'name': 'Swift Stitch Merchandise',
     'image': '/images/thread.png',
     'description':
       'Serabond is a bonded polyester thread with outstanding UV resistance suitable for outdoor applications such as marine, motorcycle seats and convertible cars',
@@ -49,32 +49,7 @@ const services = [
     'rating': 5,
     'numReviews': 12,
   },
-  {
-    '_id': '5',
-    'name': 'MK7 CLARK PLAID FABRIC',
-    'image': '/images/Plaid.png',
-    'description':
-      'The iconic tartan look! Clark plaid seat fabric is OEM VW® Golf MK7 GTI cloth. When shopping for Clark plaid, note that ours is Made in Germany, is foam backed, and is 59" wide.',
-    'brand': 'CLARK',
-    'category': 'Electronics',
-    'price': 49.99,
-    'countInStock': 0,
-    'rating': 3.5,
-    'numReviews': 10,
-  },
-  {
-    '_id': '6',
-    'name': 'WESTFALIA PLAID FABRIC',
-    'image': '/images/GreenPlaid.png',
-    'description':
-      'Westfalia plaid fabric was original in mid to late 70',
-    'brand': 'WESTFALIA',
-    'category': 'Electronics',
-    'price': 29.99,
-    'countInStock': 0,
-    'rating': 4,
-    'numReviews': 12,
-  },
+
 ]
 
 

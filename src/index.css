@@ -47,6 +47,7 @@ h3 {
 } */
 
 nav a.nav-link {
+  color: #fff;
   letter-spacing: .04rem;
   cursor: pointer; 
 }
@@ -55,7 +56,6 @@ nav a.nav-link {
 .navbar-nav > li > a {
   margin-right: .75rem;
   margin-left: .75rem;
-  color: var(--primary-black)  !important;
   border-top: .1875rem solid var(--primary-white);
 }
 

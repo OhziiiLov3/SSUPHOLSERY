@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Row, Col } from 'react-bootstrap'
-import Services from '../components/Services'
-// import products from '../products' 
+import Services from '../components/Services' 
 import axios from 'axios'
 
 

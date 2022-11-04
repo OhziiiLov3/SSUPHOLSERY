@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {Link, useParams } from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Button, Card } from 'react-bootstrap'
-import Rating from '../components/Rating'
 import axios from 'axios'
 
 function ProductScreen({match} ) {
@@ -17,7 +16,7 @@ function ProductScreen({match} ) {
         }  
         fetchService() 
 
-    }, [])
+    }, [ServiceId.id])
 
     return (
         <div>
@@ -32,10 +31,6 @@ function ProductScreen({match} ) {
                     <ListGroup.Item>
                         <h3>{service.name}</h3>
                         <h2>{service.brand}</h2>
-                    </ListGroup.Item>
-
-                    <ListGroup.Item>
-                        <Rating value={service.rating} text={`${service.numReviews} Reviews`} color='#f8e825'/>
                     </ListGroup.Item>
 
                      <ListGroup.Item>
@@ -68,13 +63,14 @@ function ProductScreen({match} ) {
                                     </Row>
                                 </ListGroup.Item>
                                  <ListGroup.Item>
-                                     <Button className='btn-block' disabled={service.countInStock == 0} type='button'>Add to Cart</Button>
+                                     <Button className='btn-block' disabled={service.countInStock === 0} type='button'>Add to Cart</Button>
                                  </ListGroup.Item>
                             </ListGroup>
                     </Card>
                 </Col>
             </Row>
         </div>
+        
     )
 }
 
