@@ -15,13 +15,31 @@ h1 {
   letter-spacing: .0200rem;
   color: rgb(193, 156, 106) !important;
   padding: 3rem 0;
-  -webkit-text-stroke-width: 1px !important;
-  -webkit-text-stroke-color:black;
+  -webkit-text-stroke-width: 2px !important;
+  -webkit-text-stroke-color:rgb(70, 71, 67, .8);
 }
+
+h3 {
+  font-family: 'Bebas Neue', cursive !important;
+  font-family: 'Kdam Thmor Pro', sans-serif !important;
+  /* font-family: 'Raleway', sans-serif !important; */
+  font-size: 50px !important;
+  letter-spacing: .0200rem;
+  color: whitesmoke !important;
+  padding: 3rem 0;
+  -webkit-text-stroke-width: 1px !important;
+  -webkit-text-stroke-color: rgb(70, 71, 67);
+   
+}
+
+
 /* *** NAVBAR *** */
 .navbar{
   border-bottom: .1875rem solid rgb(193,156,106) !important;
   backdrop-filter: blur(5px);
+  font-family: 'Bebas Neue', cursive !important;
+  font-family: 'Kdam Thmor Pro', sans-serif !important;
+  font-family: 'Raleway', sans-serif !important;
 }
 
 /* .navbar-nav{
@@ -83,6 +101,9 @@ img.card-img{
   height: 14rem  !important;
 }
 
+.card-text{
+  font-size: 1rem;
+}
 
 h1{
   padding: 1rem 0;

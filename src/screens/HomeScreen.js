@@ -21,18 +21,25 @@ function HomeScreen() {
     }, [])
 
     return (
-        <div>
-            <h1>Welcome to SSUpholstery</h1>
-            <h3> Feature Services</h3>
-            <Row>
-                {services.map(service => (
-                    <Col key={service._id} sm={12} md={6} lg={4} xl={3}>
-                    <Services service={service} />
-                    </Col>
-                ))}
-            </Row>
-        </div>
-    )
+      <div>
+        <h1>Welcome to SSUpholstery</h1>
+        <h3> Feature Products</h3>
+        <Row>
+          {services.map((service) => (
+            <Col
+              className="d-flex align-items-center justify-content-center"
+              key={service._id}
+              sm={12}
+              md={6}
+              lg={4}
+              xl={3}
+            >
+              <Services service={service} />
+            </Col>
+          ))}
+        </Row>
+      </div>
+    );
 }
 
 export default HomeScreen
