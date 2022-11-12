@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
 import About from "./screens/About";
+import Contact from "./components/Contact"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           </Container>
         </header>
       </main>
+      <Contact/>
       <Footer />
     </Router>
   );

@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImage from "../images/ComboLogo01.png";
+import aboutImage from "../assets/ComboLogo01.png";
 function About() {
   return (
     <div id="about" className="cracontainer py-5">

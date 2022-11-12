@@ -1,35 +1,26 @@
 import React from 'react'
-import {Card} from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import {Container, Card,Button} from 'react-bootstrap'
 
-function Services({ service }) {
+
+
+
+function Services() {
     return (
-       <Card className="my-3 p-3 rounded">
-           <Link to={`/service/${service._id}`}>
-           <Card.Img src={service.image}/>
-           </Link>
-
-           <Card.Body>
-
-               <Link to={`/service/${service._id}`}>
-           <Card.Title as="div" >
-                <strong>{service.name}</strong>
-           </Card.Title>
-           </Link>
-           
-        <Card.Text as="div">
-        <div className="my-3">
-            {/* {product.rating} from {product.numReviews} Reviews */}
-            {/* <Rating value={service.rating} text={`${service.numReviews} Reviews` } color={'#f8e825'} /> */}
-        </div>
-        </Card.Text>
-
-        <Card.Text as ="h3">
-            ${service.price}
-        </Card.Text>
-           </Card.Body>
-       </Card>
-    )
+      <Container className="mx-auto py-3">
+        <h1>Services</h1>
+        <Card className="text-center mx-auto">
+          <Card.Header>Services</Card.Header>
+          <Card.Body>
+            <Card.Title>Custom Upholstery</Card.Title>
+            <Card.Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ex!
+            </Card.Text>
+              <Button variant="primary">Get Quote!</Button>
+          </Card.Body>
+          <Card.Footer className="text-muted">2 days ago</Card.Footer>
+        </Card>
+      </Container>
+    );
 }
 
 export default Services

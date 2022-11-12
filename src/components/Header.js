@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../images/PrimaryIcon.png";
+import logo from "../assets/PrimaryIcon.png";
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Link } from 'react-router-dom';
@@ -18,10 +18,10 @@ function Header() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
-                <LinkContainer to="/home">
+                <LinkContainer to="/">
                   <Link
                     smooth={true}
-                    to="home"
+                    to="/"
                     offset={-100}
                     className="nav-link"
                     href="#"
