@@ -16,7 +16,7 @@ h1 {
   letter-spacing: .0200rem;
   color: #2E2E2E !important;
   padding: 3rem 0;
-  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(193, 156, 106);
 }
 
