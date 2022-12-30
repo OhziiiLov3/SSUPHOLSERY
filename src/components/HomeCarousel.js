@@ -3,11 +3,11 @@ import {Carousel, Container} from 'react-bootstrap'
 const HomeCarousel = () => {
   return (
     <div>
-      <Container className="mx-auto p-2">
+      <Container id="home" className="mx-auto p-2">
         <Carousel variant="dark">
           <Carousel.Item interval={5000} className="myLandingCarousel">
             <img
-              className="w-75 py-4"
+              className="w-100 py-4"
               style={{ height: 450 }}
               src="/images/20210813_123633.jpg"
               alt="First slide"

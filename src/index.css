@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Raleway:wght@100;500&display=swap');
+:root {
+  --primary-color: rgb(147, 203, 73);
+  --primary-dark: #4f9c55;
+  --secondary-color:rgb(193, 156, 106);
+  --secondary-dark: #e3d002;
+  --overlay: #30303080;
+}
+
+
 body{
 font-family: 'Oswald', sans-serif !important;
 background-color: #FFFFFF !important;
@@ -24,16 +33,25 @@ h3 {
   font-family: 'Bebas Neue', cursive !important;
   font-family: 'Kdam Thmor Pro', sans-serif !important;
   font-family: 'Raleway', sans-serif !important;
-  font-size: 50px !important;
+  font-size: 40px !important;
   letter-spacing: .0200rem;
-  color: #FFFFFF !important;
-  padding: 3rem 0;
+  color: #2E2E2E !important;
+  padding: 1rem 0;
    
+}
+
+h2{
+  font-family: 'Bebas Neue', cursive !important;
+  font-family: 'Kdam Thmor Pro', sans-serif !important;
+  font-family: 'Raleway', sans-serif !important;
+  -webkit-text-stroke-width: .7px !important;
+    -webkit-text-stroke-color: rgb(193, 156, 106) !important;
 }
 
 
 /* *** NAVBAR *** */
 .navbar{
+  position: fixed;
   border-bottom: .1875rem solid rgb(193,156,106) !important;
   backdrop-filter: blur(5px);
   font-family: 'Bebas Neue', cursive !important;
@@ -46,9 +64,13 @@ h3 {
 } */
 
 nav a.nav-link {
-  color: #fff;
+  color: black;
   letter-spacing: .04rem;
   cursor: pointer; 
+}
+
+.navbar{
+  background-color: #eee !important;
 }
 
 
@@ -77,6 +99,20 @@ nav a.nav-link {
    border-top: .1875rem solid  rgb(193,156,106) !important;
 }
 
+.dropdown-menu {
+  position: relative;
+}
+
+.dropdown-menu .submenu{
+  display: none;
+  position: absolute;
+  left:100%;
+}
+
+.dropdown-menu:hover.submenu{
+  display: block;
+}
+
 
 
 .logo{
@@ -93,6 +129,120 @@ nav a.nav-link {
 
 }
 
+.hero {
+  background-color: var(--overlay);
+  color: #fff;
+  height: 80vh;
+  position: relative;
+}
+
+.hero:before {
+  content: '';
+  background: url('./assets/MetallicLogoPromoImage.jpg') no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
+.button {
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+
+.hero .content {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding:  1.5rem;
+}
+
+.hero .content p:first-child {
+  font-style: italic;
+  font-size: .9rem;
+  color: rgb(193, 156, 106);
+}
+
+.hero .content p:nth-child(2) {
+  font-size: 1.4rem;
+  -webkit-text-stroke-width: .4px !important;
+    -webkit-text-stroke-color: rgb(193, 156, 106) !important;
+}
+
+.hero .content p:nth-child(3) {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: rgb(193, 156, 106) !important;
+  -webkit-text-stroke-width: .5px !important;
+    -webkit-text-stroke-color: white!important;
+}
+
+.hero .content p:nth-child(4) {
+  font-size: 2.2rem;
+  font-style: italic;
+  -webkit-text-stroke-width: .4px !important;
+    -webkit-text-stroke-color: rgb(193, 156, 106) !important;
+}
+
+.hero .button {
+  margin: 1rem 0;
+  width: 300px;
+  background-color: #eee;
+  border: 1px solid var(--secondary-color);
+}
+
+.hero .button:hover {
+  background-color: var(--secondary-dark);
+  border: 1px solid var(--overlay);
+}
+
+
+.button {
+  padding: 17px 28px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    max-width: 100%;
+  }
+
+  .hero .button{
+    width: 100%;
+  }
+
+  .hero .content {
+    max-width: 100%;
+  }
+
+  .hero .content p:nth-child(2) {
+    font-size: 1.3rem;
+  }
+
+  .hero .content p:nth-child(3) {
+    font-size: 2rem;
+  }
+
+  .hero .content p:nth-child(4) {
+    font-size: 1.3rem;
+  }
+}
+
 /* *** HOMESCREEN *** */
 
 .homeCard{
@@ -100,6 +250,14 @@ nav a.nav-link {
       max-width: 250 !important;
       height: 220px !important;
     
+}
+
+@media screen and (max-width:600px){
+  .homeCard{
+    width: 200px !important;
+    max-width: 250 !important;
+    height: 200px !important;
+}
 }
 
 
@@ -126,7 +284,7 @@ h1{
   border-radius: 15px;
   padding-bottom: 4rem; 
   margin-bottom: 0;
-  width: 100%;
+  max-width: 100%;
 } 
 @media(max-width:768px) {
 .landingCarousel {
@@ -220,6 +378,28 @@ video{
   align-items: center;
   color: white !important;
 }
+/* VolkasWagen Product Cards */
+
+
+.productCard {
+  justify-content: center;
+  width: 250px !important;
+  max-width: 250px !important;
+  height: 220px !important;
+  background-color: var(--secondary-color) !important;
+
+}
+
+.cardText, h3{
+  font-family: 'Bebas Neue', cursive !important;
+  font-family: 'Kdam Thmor Pro', sans-serif !important;
+  font-family: 'Raleway', sans-serif !important;
+  color:#FFFFFF;
+  -webkit-text-stroke-width: .7px !important;
+  -webkit-text-stroke-color: rgb(193, 156, 106) !important;
+}
+
+/* */
 /* ***ABOUT PAGE*** */
 
 
@@ -479,8 +659,9 @@ video{
 .contact input,
 .contact textarea {
   width: 100%;
+  height: auto;
   box-sizing: border-box;
-  background: white;
+  background: #FFFFFF;
   resize: none;
   border: 0;
   border-bottom: .125rem solid rgb(193,
@@ -508,7 +689,7 @@ video{
 }
 
 .contact textarea {
-  height: 11.55rem !important;
+  height: 8rem !important;
 
 
 }
@@ -554,7 +735,9 @@ textarea.form-control {
 
 .error-message {
   color: rgba(22, 22, 22);
-  background: rgb(147, 203, 73, .7);
+  background: rgb(193,
+      156,
+      106);
   text-align: left;
 
 }
