@@ -40,10 +40,10 @@ function HomeScreen() {
             ))}
           </Row>
           <Services />
-          <Video />
-          <Row className="my-2 p-3">
+          {/* <Video /> */}
+          {/* <Row className="my-2 p-3">
             <HomeBlog blog={blog} />
-          </Row>
+          </Row> */}
         </div>
       </div>
     );

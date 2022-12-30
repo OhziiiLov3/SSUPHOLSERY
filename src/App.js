@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
 import About from "./components/About";
-import Contact from "./components/Contact"
+// import Contact from "./components/Contact"
 import VolkswagenScreen from './screens/VolkswagenScreen';
 
 
@@ -18,7 +18,7 @@ function App() {
             <Route path="/volkswagen" element={<VolkswagenScreen />} />
             <Route path="/product/:id" element={<ProductScreen />} />
           </Routes>
-          <Contact />
+          {/* <Contact /> */}
       <Footer />
     </Router>
   );

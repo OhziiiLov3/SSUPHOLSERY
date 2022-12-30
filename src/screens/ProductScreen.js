@@ -28,6 +28,14 @@ function ProductScreen({match}) {
               <ListGroup.Item>
                 Description: {product.description}
               </ListGroup.Item>
+              <ListGroup.Item>
+                <ul>
+                  <li>Fit for: {product.carMake}</li>
+                  <li>Fit for: {product.carModel}</li>
+                  <li>Material: {product.material}</li>
+                  <li>Color: {product.color}</li>
+                </ul>
+              </ListGroup.Item>
             </ListGroup>
           </Col>
 
